@@ -1,0 +1,49 @@
+#root {
+  width: 100%;
+  max-width: 1003px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  gap: 1rem;
+  @media screen and (max-width:728px) {
+    flex-direction: column;
+    align-items: center;
+    width:80%;
+  }
+}
+
+.calendar__container {
+  padding: 1rem 2rem;
+  background: rgba(121, 121, 121, 0.267);
+  border: 1px solid rgba(72, 252, 198, 0.418);
+  box-shadow: -1px 1px 6px -1px #800080c4;
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  width: 100%;
+  flex-shrink: initial;
+  flex-basis: 70%;
+  @media screen and (max-width:728px) {
+    flex-basis: content;
+  }
+
+@media (prefers-color-scheme: dark) {
+  background: rgba(29, 1, 56, 0.411);
+  border: 1px solid rgba(72, 252, 198, 0.151);
+  box-shadow: -1px 1px 6px -1px #4d008069;
+}
+
+}
+.year__buttons{
+  display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width:728px) {
+      flex-direction: row;
+    }
+}
+.year__btn.is-active{
+  background: #8a00e6;
+}
