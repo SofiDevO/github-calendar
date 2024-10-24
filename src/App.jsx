@@ -20,7 +20,7 @@ function App() {
 
       <div className="calendar__container">
         <GitHubCalendar
-          username="ElStron"
+          username="Sofidev"
           year={selectedYear}
           weekStart={1}
           theme={{
