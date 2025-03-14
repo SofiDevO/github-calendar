@@ -16,7 +16,7 @@ const Calendar = () => {
     <>
       <div className="calendar__container">
         <GitHubCalendar
-          username="SofiDev"
+          username="SofiDevO"
           year={selectedYear}
           weekStart={1}
           theme={{
